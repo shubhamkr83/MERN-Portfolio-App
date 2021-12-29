@@ -16,18 +16,18 @@ app.use(require('./router/auth'));
 const PORT = process.env.PORT || 8000;
 
 
-app.get('/', (req, res) => {
-    res.send(`Hello world from the server app.js`);
-});
+// app.get('/', (req, res) => {
+//     res.send(`Hello world from the server app.js`);
+// });
 
-app.get('/about', (req, res) => {
-    console.log(`Hello my About`);
-    res.send(`Hello, I am from contact page from the server`);
-});
-app.get('/contact', (req, res) => {
-    console.log(`Hello my About`);
-    res.send(`Hello, I am from contact page from the server`);
-});
+// app.get('/about', (req, res) => {
+//     console.log(`Hello my About`);
+//     res.send(`Hello, I am from contact page from the server`);
+// });
+// app.get('/contact', (req, res) => {
+//     console.log(`Hello my About`);
+//     res.send(`Hello, I am from contact page from the server`);
+// });
 
 app.post('/contact', (req, res) => {
     res.send(`Hello Contact world from the server`);
