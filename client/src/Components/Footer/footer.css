@@ -1,0 +1,334 @@
+/* -------------- Footer --------------- */
+
+.footer_section {
+    width: 100%;
+    height: 28rem;
+    display: grid;
+    place-items: center;
+    background-color: rgb(29, 28, 28);
+    color: #fff;
+    /* border: 2px solid red; */
+  }
+  
+  .footer_section .footer_center{
+    width: 115rem;
+    height: 24.5rem;
+    display: grid;
+    place-items: center;
+    /* border: 2px solid red; */
+  }
+  
+  .footer_top{
+    width: 15rem;
+    height: 5.2rem;
+    display: grid;
+    place-items: center;
+    /* border: 2px solid red; */
+  }
+  
+  .footer_top h2{
+    font-size: 3.8rem;
+    color: var(--title_color);
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .footer_middle{
+    width: 95rem;
+    height: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+  
+  .footer_middle .left_section{
+    width: 15rem;
+    height: 15rem;
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    /* border: 2px solid red; */
+  }
+  
+  .footer_middle .left_section h2{
+    color: var(--secondary_color);
+  }
+  
+  .footer_middle .left_section a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.2s linear;
+  }
+  
+  .footer_middle .left_section a:hover{
+    transform: translateX(1rem);
+    color: var(--subtitle_color);
+    font-weight: 800;
+  }
+  
+  .footer_middle .right_section{
+    width: 28rem;
+    height: 15rem;
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    /* border: 2px solid red; */
+  }
+  
+  .footer_middle .right_section h2{
+    color: var(--subtitle_color);
+  }
+  .footer_middle .right_section h3{
+    font-weight: 600;
+  }
+  
+  .footer_middle .right_section .social_icons{
+    width: 19rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social_icons .MuiSvgIcon-root{
+    font-size: 3rem;
+    color: #fff;
+    margin: 0 1rem;
+    transition: all 0.2s linear;
+  }
+  
+  .social_icons .MuiSvgIcon-root:hover{
+    transform: translateY(-.6rem);
+    color: var(--secondary_color);
+  }
+  
+  .footer_bottom{
+    width: 115rem;
+    display: grid;
+    place-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+    color: #cfcfcf;
+    /* border: 2px solid rgb(255, 0, 242); */
+  }
+
+  @media (max-width: 1023px){
+  
+    /* -------------- Footer --------------- */
+  
+  .footer_section {
+    height: 28rem;
+  }
+  .footer_section .footer_center{
+    width: 100%;
+    height: 24.5rem;
+  }
+  .footer_top{
+    width: 15rem;
+    height: 5.2rem;
+  }
+  .footer_top h2{
+    font-size: 3.8rem;
+  }
+  .footer_middle{
+    width: 75rem;
+    height: 15rem;
+  }
+  .footer_middle .left_section{
+    width: 15rem;
+    height: 15rem;
+    margin-left: 6rem;
+    font-size: 1.2rem;
+  }
+  .footer_middle .right_section{
+    width: 28rem;
+    height: 15rem;
+    font-size: 1.2rem;
+  }
+  .footer_middle .right_section .social_icons{
+    width: 19rem;
+    height: 4rem;
+  }
+  .social_icons .MuiSvgIcon-root{
+    font-size: 3rem;
+    margin: 0 1rem;
+  }
+  .footer_bottom{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  }
+  @media (max-width: 846px){
+  
+    /* -------------- Footer --------------- */
+    .footer_section{
+      height: 69rem;
+    }
+    .footer_section .footer_center{
+      width: 100%;
+      height: 63rem;
+    }
+    .footer_top{
+      width: 100%;
+      height: 8rem;
+    }
+    .footer_top h2{
+      font-size: 4rem;
+    }
+    .footer_middle{
+      width: 100%;
+      height: 49rem;
+      margin-left: 0;
+      flex-direction: column;
+    }
+    .footer_middle .left_section{
+      width: 100%;
+      height: 22rem;
+      margin-left: 0;
+      font-size: 1.5rem;
+    }
+    .footer_middle .right_section{
+      width: 100%;
+      height: 22rem;
+      font-size: 1.5rem;
+    }
+    .social_icons .MuiSvgIcon-root{
+      font-size: 3rem;
+      margin: 0 2rem;
+    }
+    .footer_bottom{
+      width: 100%;
+      height: 5rem;
+      font-size: 1rem;
+    }
+  }
+  
+  /* ------------ Mobile Phones -------------- */
+  
+  @media (max-width: 768px){
+    
+    /* -------------- Footer --------------- */
+    .footer_section{
+      height: 69rem;
+    }
+    .footer_section .footer_center{
+      width: 100%;
+      height: 63rem;
+    }
+    .footer_top{
+      width: 100%;
+      height: 8rem;
+    }
+    .footer_top h2{
+      font-size: 4rem;
+    }
+    .footer_middle{
+      width: 100%;
+      height: 49rem;
+      flex-direction: column;
+    }
+    .footer_middle .left_section{
+      width: 100%;
+      height: 22rem;
+      font-size: 1.5rem;
+    }
+    .footer_middle .right_section{
+      width: 100%;
+      height: 22rem;
+      font-size: 1.5rem;
+    }
+    .social_icons .MuiSvgIcon-root{
+      font-size: 3rem;
+      margin: 0 2rem;
+    }
+    .footer_bottom{
+      width: 100%;
+      height: 5rem;
+      font-size: 1rem;
+    }
+  
+  }
+  
+  @media (max-width: 600px){ 
+  }
+   
+  @media (max-width: 450px){
+  
+    /* -------------- Footer --------------- */
+    .footer_section{
+      height: 60rem;
+    }
+    .footer_section .footer_center{
+      height: 54rem;
+    }
+    .footer_top{
+      height: 8rem;
+    }
+    .footer_top h2{
+      font-size: 3rem;
+    }
+    .footer_middle{
+      height: 45rem;
+      flex-direction: column;
+    }
+    .footer_middle .left_section{
+      height: 22rem;
+      font-size: 1.3rem;
+    }
+    .footer_middle .right_section{
+      height: 22rem;
+      font-size: 1.3rem;
+    }
+    .social_icons .MuiSvgIcon-root{
+      font-size: 2.8rem;
+      margin: 0 2rem;
+    }
+    .footer_bottom{
+      height: 5rem;
+      font-size: .7rem;
+    }
+  }
+  
+  @media (max-width: 345px){
+   
+  /* -------------- Footer --------------- */
+  .footer_section{
+    height: 60rem;
+  }
+  .footer_section .footer_center{
+    height: 54rem;
+  }
+  .footer_top{
+    height: 8rem;
+  }
+  .footer_top h2{
+    font-size: 2.6rem;
+  }
+  .footer_middle{
+    height: 45rem;
+    flex-direction: column;
+  }
+  .footer_middle .left_section{
+    height: 22rem;
+    font-size: 1.1rem;
+  }
+  .footer_middle .right_section{
+    height: 22rem;
+    font-size: 1.1rem;
+  }
+  .social_icons .MuiSvgIcon-root{
+    font-size: 2.3rem;
+  }
+  .footer_bottom{
+    height: 5rem;
+    font-size: .6rem;
+  }
+  
+  }
+  

@@ -1,0 +1,203 @@
+/*------------- Navbar ----------------  */
+.navbar{
+    width: 100%;
+    height: 6.8rem;
+    display: grid;
+    grid-template-columns: 10rem 1fr 1fr  10rem;
+    background-color: var(--primary_color);
+    position: fixed;
+    margin-top: 1rem;
+    z-index: 1000;
+    /* border: 2px solid red; */
+  }
+  .logo{
+    display: grid;
+    grid-column: 2/3;
+    justify-content: start;
+    align-items: center;
+    font-size: 3rem;
+    color: var(--title_color);
+    font-family: 'Dancing Script', 'cursive';
+    /* border: 2px solid red; */
+  }
+  .menu{
+    grid-column: 3/4;
+    height: 6.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: .6rem;
+    font-size: 2rem;
+    color: #fff;
+    /* border: 2px solid red; */
+  }
+  .navbar .menu .anc{
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    position: relative;
+    /* border: 2px solid red; */
+  }
+  .menu .anc::before{
+    content: "";
+    position: absolute;
+    top: .2rem;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: .2rem solid var(--secondary_color);
+    transition: all 0.5s linear;
+  }
+  .menu .anc::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    border-top: .2rem solid var(--secondary_color);
+    transition: all 0.5s linear;
+  }
+  .menu .anc:hover::before{
+  width: 100%;
+  }
+  .menu .anc:hover::after{
+  width: 100%;
+  }
+  
+  .togglerIcon img{
+    width: 4rem;
+    height: auto;
+  }
+  .menuIcon{
+    grid-column: 4/5;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    display: none;
+  }
+  .menuIcon .MuiSvgIcon-root{
+    font-size: 4.4rem;
+    color: #fff;
+  }
+  .active_class{
+    color: #0073D2;
+  }
+  
+  @media (max-width: 1023px){
+  
+    /*------------- Navbar ----------------  */
+    .menu{
+      display: none;
+    } 
+    .togglerIcon img{
+      width: 5rem;
+      justify-items: center;
+      align-items: center;
+    }
+    .navbar{
+      height: 6rem;
+      grid-template-columns: 4rem 1fr 1fr 6rem;
+      grid-template-rows: 1fr 1fr;
+    }
+    .logo{
+      padding-top: .6rem;
+      font-size: 2.5rem;
+    }
+    .mobile_menu{
+      height: 31rem;
+      grid-column: 1/-1;
+      grid-row: 2/3;
+      display: grid;
+      place-items: center;
+      background-color: var(--primary_color);
+      z-index: 99;
+      transition: all 2s linear;
+    }
+    
+    .menuIcon{
+      padding-top: .6rem;
+      display: grid;
+    }
+}
+
+/* ------------ Mobile Phones -------------- */
+
+@media (max-width: 768px){
+    /* ------ Navbar ------ */
+    .navbar{
+      width: 100%;
+      grid-template-columns: 1.6rem 1fr 1fr 4.8rem;
+    }
+    .menuIcon{
+      margin-top: .6rem;
+    }
+    .mobile_menu{
+      height: 26rem;
+    }
+    .navbar .menu .anc{
+      font-size: 1.8rem;
+    }
+    .togglerIcon img{
+      width: 4.4rem;
+    }
+    .menuIcon .MuiSvgIcon-root{
+      font-size: 3.8rem;
+    }
+    .navbar .nav_right{
+      display: none;
+      text-align: right;
+    }
+    .navbar .menuIcon{
+      display: block;
+    }
+}
+
+@media (max-width: 450px){
+    /* ----------- Navbar ----------- */
+    .navbar{
+     height: 5.5rem;
+     grid-template-columns: 1.6rem 1fr 1fr 4.5rem;
+   }
+   .mobile_menu{
+     height: 28rem;
+   }
+   .logo{
+     padding-top: 1rem;
+     font-size: 2.3rem;
+   }
+   .menuIcon{
+     margin-top: .6rem;
+   }
+   .menuIcon .MuiSvgIcon-root{
+     font-size: 3.4rem;
+   }
+}
+
+@media (max-width: 345px){
+    /* ----------- Navbar ----------- */
+    .navbar{
+      grid-template-columns: 1rem 1fr 1fr 4rem;
+    }
+    .logo{
+      padding-top: 1rem;
+      font-size: 2rem;
+    }
+    .mobile_menu{
+      height: 24rem;
+    }
+    .navbar .menu .anc{
+      font-size: 1.5rem;
+    }
+    .menuIcon{
+      margin-top: .6rem;
+    }
+    .menuIcon .MuiSvgIcon-root{
+      font-size: 3.4rem;
+    }
+    .togglerIcon img{
+      width: 3.6rem;
+    }
+}
+

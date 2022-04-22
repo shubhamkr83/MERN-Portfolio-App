@@ -1,0 +1,242 @@
+/* ----------------- Technology ----------------- */
+
+.tech_section {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  /* border: 2px solid red; */
+}
+
+.tech_title {
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  display: grid;
+  margin: 1.5rem 0;
+  place-items: center;
+  color: var(--subtitle_color);
+  text-shadow: var(--title_shadow);
+  text-transform: uppercase;
+  /* border: 2px solid red; */
+}
+
+.tech_section .tech_center {
+  width: 115rem;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  transition: all 0.3s linear;
+  /* border: 2px solid red; */
+}
+
+.tech_center .tech_front,
+.tech_back,
+.others {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* border: 2px solid red; */
+}
+
+.tech_center .tech {
+  width: 25rem;
+  height: 25rem;
+  display: grid;
+  place-items: center;
+  margin: 1rem 0;
+  /* border: 2px solid red; */
+}
+
+.tech_center .tech img {
+  width: 16rem;
+  height: 16rem;
+  box-shadow: -7px 6px 18px 2px #D8DBDD;
+  -webkit-box-shadow: -7px 6px 18px 2px #D8DBDD;
+  -moz-box-shadow: -7px 6px 18px 2px #D8DBDD;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+  /* border: 2px solid red; */
+}
+
+.tech_center .tech img:hover {
+  transform: translateY(-1rem);
+}
+
+.tech_center .tech h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #0b0b0c;
+}
+
+@media (max-width: 1023px) {
+
+
+  /* ----------------- Technology ----------------- */
+  .tech_section {
+    height: auto;
+  }
+
+  .tech_title {
+    width: 100%;
+    text-align: center;
+    font-size: 3.4rem;
+  }
+
+  .tech_section .tech_center {
+    width: 100%;
+    height: auto;
+  }
+
+  .tech_center .tech {
+    width: 28rem;
+    height: 27rem;
+    margin: .5rem 0;
+  }
+
+  .tech_center .tech img {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .tech_center .tech h2 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 846px) {
+
+  /* ----------------- Technology ----------------- */
+  .tech_title {
+    width: 100%;
+    text-align: center;
+    font-size: 3.4rem;
+  }
+
+  .tech_section .tech_center {
+    width: 100%;
+  }
+
+  .tech_center .tech {
+    width: 28rem;
+    height: auto;
+    /* height: 27rem; */
+    margin: .5rem 0;
+  }
+
+  .tech_center .tech img {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .tech_center .tech h2 {
+    font-size: 2.7rem;
+  }
+}
+
+/* ------------ Mobile Phones -------------- */
+
+@media (max-width: 768px) {
+
+  /* ----------------- Technology ----------------- */
+
+  .tech_title {
+    width: 100%;
+    text-align: center;
+    font-size: 3.4rem;
+  }
+
+  .tech_section .tech_center {
+    width: 100%;
+  }
+
+  .tech_center .tech {
+    width: 28rem;
+    height: 27rem;
+    margin: .5rem 0;
+  }
+
+  .tech_center .tech img {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .tech_center .tech h2 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* ----------------- Technology ----------------- */
+
+  .tech_title {
+    font-size: 2.6rem;
+  }
+
+  .tech_center .tech {
+    width: 20rem;
+    height: 22rem;
+  }
+
+  .tech_center .tech img {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .tech_center .tech h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+
+  /* ----------------- Technology ----------------- */
+  .tech_title {
+    font-size: 2rem;
+  }
+
+  .tech_center .tech {
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .tech_center .tech img {
+    width: 10.5rem;
+    height: 10.5rem;
+  }
+
+  .tech_center .tech h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 345px) {
+
+  /* ----------------- Technology ----------------- */
+
+  .tech_title {
+    font-size: 1.7rem;
+  }
+
+  .tech_center .tech {
+    width: 14rem;
+    height: 16rem;
+  }
+
+  .tech_center .tech img {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .tech_center .tech h2 {
+    font-size: 1.3rem;
+  }
+}

@@ -64,7 +64,7 @@ ${'' /* -------- Contact Section ---------------- */}
 .contact_section{
     background-image: ${props => props.theme.backgroundImage};
 }
-.center_contact button{
+.center_contact .submit_button{
     color: ${props => props.theme.fontColor};
 }
 

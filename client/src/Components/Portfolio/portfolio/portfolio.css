@@ -1,0 +1,56 @@
+/* --------------- Portfolio --------------------- */
+
+.Port_title{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    color: var(--title_color);
+    text-shadow: var(--title_shadow);
+    text-transform: uppercase;
+    margin: .5rem 0;
+    /* border: 2px solid red; */
+  }
+
+@media (max-width: 1023px){
+  
+    /* --------------- Portfolio --------------------- */
+    .Port_title{
+      font-size: 3rem;
+      margin-top: 2rem ;
+    }
+}
+
+@media (max-width: 768px){
+  
+    /* --------------- Portfolio --------------------- */
+    .Port_title{
+      font-size: 3rem;
+      margin-top: 2rem ;
+    }
+}
+
+@media (max-width: 600px){ 
+  
+    /* --------------- Portfolio --------------------- */
+    .Port_title{
+      font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 450px){
+
+    /* --------------- Portfolio --------------------- */
+    .Port_title{
+      font-size: 2rem;
+    }
+}
+
+@media (max-width: 345px){
+  
+    /* --------------- Portfolio --------------------- */
+    .Port_title{
+      font-size: 1.6rem;
+    }
+}
